@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+
+.form{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  max-height: 1306px;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formJobs{  
+  max-width: 1020px;
+  margin: 0 auto;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ display: flex;
+ flex-wrap: wrap;
+ gap:30px
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.job:nth-child(1),
+.job:nth-child(6){
+  
+  border: 10px solid #E30413;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.job:nth-child(2),
+.job:nth-child(7){
+  border: 10px solid #3EA535;
+}
+
+.job:nth-child(3),
+.job:nth-child(8){
+  border: 10px solid #FFEE00;
+
+}
+
+.job:nth-child(5){
+  border: 10px solid #F8C5AF;
+}
+
+.job:nth-child(4),
+.job:nth-child(9){
+  border: 10px solid #039FE3;
+
+}
+
+h2{
+  font-size: 30px;
+  padding: 17px;
+}
+
+.jobParagraphe{
+  font-size: 18px;
+  padding: 18px;
+}
+
+
+.job{
+
+ width: 300px;
+ height: 300px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.conteiner{
+width: 1440px;
+  background-color: #333333;
+  
+}
+.header{
+  
+  height: 100px;
+  background-color: #333333;
+  color: white;
+ font-size: 40px;
+  font-weight: 700;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+  
+
+.footer{
+ background-color: #DDDDDD;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media (max-width: 1024px){
+
+.formJobs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+  .formJob{
+    width: 280px;
+    height: 280px;
+   
+   }
+
+   .header{
+    font-size: 35px;
+   }
+   h2{
+    font-size: 24px;
+    
+  }
+  .jobParagraphe{
+    font-size: 16px;
+    
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 768px){
+  .formJob{
+    width: 700px;
+    height: 200px;
+  
+   }
+.formJobs{
+  gap:15px;
 }
+   .header{
+    font-size: 35px;
+   }
+   h2{
+    font-size: 24px;
+    
+  }
+  .jobParagraphe{
+    font-size: 16px;
+    
+  }
+  h2{
+    font-size: 30px;
+    padding-left: 17px;
+    padding-top: 35px;
+  }
+} 
